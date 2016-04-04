@@ -24,4 +24,29 @@ from __future__ import print_function, division
 
 import topology_lib_system_fail  # noqa
 
-# Use topology_lib_system_fail in this example
+TOPOLOGY = """
+# |        |
+# |        |
+# |  ops1  |
+# |        |
+# |        |
+
+# Nodes
+[type=openswitch name="OpenSwitch 1"] ops1
+
+# Links
+"""
+
+# Add your library functions here.
+
+
+def test_systemfail(topology):
+    ops1 = topology.get('ops1')
+
+    assert ops1 is not None
+
+    if ops1.libs.system_fail.systemfail():
+        print("Switch has failed services..")
+        raise Exception("Exiting")
+    else:
+        print("All good!")
