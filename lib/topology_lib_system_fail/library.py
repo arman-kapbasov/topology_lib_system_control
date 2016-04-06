@@ -31,7 +31,8 @@ def systemfail(enode):
     #
     # otherwise returns the list of the failed services
     #
-    cmd = 'systemctl --state=failed | grep failed'
+    cmd = ("systemctl list-units  -all --state=failed | grep failed | " +
+        "awk '{print $2;}'")
     retval = enode(cmd, shell='bash')
     if retval is "":
         return None
