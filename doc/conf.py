@@ -207,7 +207,7 @@ html_last_updated_fmt = '%Y-%m-%d'
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'topology_lib_system_faildoc'
+htmlhelp_basename = 'topology_lib_system_controldoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -230,8 +230,8 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (
-        'index', 'topology_lib_system_fail.tex',
-        'system_fail Communication Library for Topology Documentation',
+        'index', 'topology_lib_system_control.tex',
+        'system_control Communication Library for Topology Documentation',
         'Hewlett Packard Enterprise Development LP', 'manual'
     ),
 ]
@@ -264,7 +264,7 @@ latex_documents = [
 man_pages = [
     (
         'index',
-        'topology_lib_system_fail',
+        'topology_lib_system_control',
         'system_fail Communication Library for Topology Documentation',
         [author], 1
     ),
@@ -282,10 +282,10 @@ man_pages = [
 texinfo_documents = [
     (
         master_doc,
-        'topology_lib_system_fail',
-        'system_fail Communication Library for Topology Documentation',
+        'topology_lib_system_control',
+        'system_control Communication Library for Topology Documentation',
         author,
-        'topology_lib_system_fail',
+        'topology_lib_system_control',
         (
             'Check if switch has system services that failed'
         ),
