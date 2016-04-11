@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# system_fail Communication Library for Topology documentation build configuration file.
+# system_control Communication Library for Topology documentation build configuration file.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -14,7 +14,7 @@
 import os
 from os.path import join, dirname, abspath
 
-from topology_lib_system_fail import __version__
+from topology_lib_system_control import __version__
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -53,7 +53,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'system_fail Communication Library for Topology'
+project = 'system_control Communication Library for Topology'
 copyright = '2016, Hewlett Packard Enterprise Development LP'
 author = 'Hewlett Packard Enterprise Development LP'
 
@@ -265,7 +265,7 @@ man_pages = [
     (
         'index',
         'topology_lib_system_control',
-        'system_fail Communication Library for Topology Documentation',
+        'system_control Communication Library for Topology Documentation',
         [author], 1
     ),
 ]
@@ -287,7 +287,7 @@ texinfo_documents = [
         author,
         'topology_lib_system_control',
         (
-            'Check if switch has system services that failed'
+            'System control library'
         ),
         'Miscellaneous'
     ),
@@ -312,7 +312,7 @@ def setup(app):
 
 # autoapi configuration
 autoapi_modules = {
-    'topology_lib_system_fail': None
+    'topology_lib_system_control': None
 }
 
 # Configure PlantUML

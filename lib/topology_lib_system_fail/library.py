@@ -16,7 +16,7 @@
 # under the License.
 
 """
-topology_lib_system_fail communication library implementation.
+topology_lib_system_control communication library implementation.
 """
 
 from __future__ import unicode_literals, absolute_import
@@ -25,7 +25,7 @@ from __future__ import print_function, division
 # Add your library functions here.
 
 
-def systemfail(enode):
+def check_system_services(enode):
     #
     # returns None if no failed system services
     #
@@ -39,5 +39,5 @@ def systemfail(enode):
     else:
         return retval
 __all__ = [
-    'systemfail'
+    'check_system_services'
 ]
